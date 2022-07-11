@@ -1,9 +1,38 @@
-<nav id="doc__nav">
-  <ul>
-    <li>link 1</li>
-    <li>link 2</li>
-  </ul>
-</nav>
+<script>
+	import SideNav from "$lib/SideNav.svelte"
+	const linkGroups = [
+		{
+			name: "Configuration de PAGIEL",
+			slug: "/configs",
+			links: [
+				{
+					name: "Configuration autonome",
+					url: "#complete"
+				},
+				{
+					name: "Base de données externes",
+					url: "#externe"
+				},
+				{
+					name: "Ne pas utiliser PowerAPI",
+					url: "#powerapi"
+				},
+			]
+		},
+		{
+			name: "Configuration du runner",
+			slug: "/configs/runner",
+			links: [
+				{
+					name: "Configuration par défaut",
+					url: "#defaut"
+				}
+			]
+		}
+	]
+</script>
+
+<SideNav linkGroups={linkGroups} />
 <article id="doc__content">
   <slot></slot>
 </article>
@@ -13,13 +42,5 @@
 		padding: 2rem 1rem;
 		margin: 0;
 		width: 80%;
-	}
-
-	#doc__nav{
-		padding: 2rem 1rem;
-		margin: 0;
-		width: 20%;
-		background-color: var(--medium-color);
-		box-shadow: var(--simple-shadow);
 	}
 </style>

@@ -34,10 +34,16 @@
 
 	.header__navbar-link, .header__navbar-link:visited {
 		color: var(--dark-color);
+		padding: 0.5em;		
 		text-decoration: none;
 		text-transform: uppercase;
 		font-weight: 700;
 		line-height: 16px;
+	}
+
+	.header__navbar-link:hover, .header__navbar-link:focus {
+		color: var(--white-color);
+		background-color: var(--dark-color);
 	}
 
 </style>
