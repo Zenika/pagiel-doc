@@ -1,4 +1,4 @@
-import adapter from '@sveltejs/adapter-auto';
+import adapter from '@sveltejs/adapter-static';
 import {markdown} from "svelte-preprocess-markdown"
 
 /** @type {import('@sveltejs/kit').Config} */
@@ -8,12 +8,7 @@ const config = {
 	preprocess: markdown(),
 	extensions: ['.svelte','.md'],
 	kit: {
-		adapter: adapter(),
-
-		// Override http methods in the Todo forms
-		methodOverride: {
-			allowed: ['PATCH', 'DELETE']
-		}
+		adapter: adapter({fallback: "200.html"})
 	}
 };
 

@@ -3,15 +3,20 @@
   "version": "0.0.1",
   "scripts": {
     "dev": "vite dev",
-    "build": "svelte-kit build",
-    "package": "svelte-kit package",
-    "preview": "svelte-kit preview"
+    "expose": "vite dev --host",
+    "build": "vite build",
+    "preview": "vite preview",
+    "preview:host": "vite preview --host"
   },
   "devDependencies": {
     "@sveltejs/adapter-auto": "next",
     "@sveltejs/kit": "next",
     "svelte": "^3.47.0",
     "svelte-preprocess-markdown": "^2.7.3",
+    "svelte2tsx": "^0.5.12",
+    "typescript": "^4.7.4",
+    "@sveltejs/adapter-node": "^1.0.0-next.82",
+    "@sveltejs/adapter-static": "^1.0.0-next.38",
     "vite": "^2.9.13"
   },
   "type": "module"
