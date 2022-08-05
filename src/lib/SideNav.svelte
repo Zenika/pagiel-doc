@@ -22,7 +22,6 @@
 		width: 20%;
 		background-color: var(--white-color);
     border: 1px solid var(--medium-color);
-		box-shadow: var(--simple-shadow);
 	}
 
   .sidenav__group{
@@ -32,10 +31,12 @@
   .sidenav__link{
     padding: 0 1em;
     border-radius: 5px;
+    text-decoration: none;
   }
 
   .sidenav__link:visited{
     color: var(--black-color);
+    text-decoration: none;
   }
 
   .sidenav__link:hover, .sidenav__link:focus{

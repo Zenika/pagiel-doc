@@ -17,12 +17,12 @@ body {
 
 a {
 	color: var(--black-color);
-	text-decoration: none;
+	text-decoration: underline;
 }
 
 a:visited {
 	color: var(--dark-color);
-	text-decoration: none;
+	text-decoration: underline;
 }
 
 .sr-only {
@@ -37,3 +37,14 @@ a:visited {
 	border: 0;
 }
 
+pre {
+	padding: 0.5em;
+	width: fit-content;
+	border-radius: 5px;
+	border: var(--dark-color) 1px solid;
+	background-color: var(--light-color);
+	min-height: 3em;
+	display: flex;
+	flex-direction: column;
+	justify-content: end;
+}

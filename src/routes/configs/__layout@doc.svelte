@@ -24,8 +24,12 @@
 			slug: "/configs/runner",
 			links: [
 				{
-					name: "Configuration par défaut",
+					name: "Configuration du runner",
 					url: "#defaut"
+				},
+				{
+					name: "Configuration des jobs",
+					url: "#jobs"
 				}
 			]
 		}
