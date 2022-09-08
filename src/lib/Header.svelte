@@ -30,6 +30,7 @@
 		display: flex;
 		gap: 10px;
 		margin: auto 0;
+		flex-wrap: wrap;
 	}
 
 	.header__navbar-link, .header__navbar-link:visited {

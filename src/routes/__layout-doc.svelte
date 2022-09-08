@@ -14,6 +14,12 @@
 		height: 100%;
 		min-height: 100vh;
 		display: flex;
-		flex-direction: row;
+		flex-direction: column;
+	}
+	
+	@media screen and (min-width: 768px){
+		#doc {
+			flex-direction: row;
+		}
 	}
 </style>

@@ -32,7 +32,11 @@ Il est important que le runner ne puisse executer qu'un job à la fois, le proje
 La commande suivante permet d'enregistrer un runner avec cette configuration, mais attention les paramettres `concurrent` et `check_interval` ne sont pas accessible en ligne de commande, il faudra les éditer manuellement dans le fichier de configuration.
 <Code>
 ```
-sudo gitlab-runner register --name "pagiel-runner" --url "https://gitlab.com/" --registration-token "token" --executor "shell"
+sudo gitlab-runner register \
+    --name "pagiel-runner" \
+    --url "https://gitlab.com/" \
+    --registration-token "token" \
+    --executor "shell"
 ```
 </Code>
 
