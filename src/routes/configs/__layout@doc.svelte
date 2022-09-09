@@ -20,6 +20,24 @@
 			]
 		},
 		{
+			name: "Utilisation du projet",
+			slug: "/configs/process",
+			links: [
+				{
+					name: "Utilisation simple",
+					url: "#defaut"
+				},
+				{
+					name: "Test d'image docker",
+					url: "#docker-image"
+				},
+				{
+					name: "Test de docker compose",
+					url: "#docker-compose"
+				}
+			]
+		},
+		{
 			name: "Configuration du runner",
 			slug: "/configs/runner",
 			links: [

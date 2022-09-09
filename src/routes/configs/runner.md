@@ -55,7 +55,7 @@ pagiel:
     - initialDirectory=$(pwd)
     - cd $PROJECT_DIRECTORY
     - echo "$URLS" > ./input/urls.yaml
-    - ./parcours.sh
+    - ./pagiel.sh
     - cp reports/reports/report.xml $initialDirectory
   artifacts:
     when: always
@@ -84,7 +84,7 @@ Toutefois, certaine partie de la déclaration du job peuvent être redondantes s
     - initialPath=$(pwd)
     - cd $PROJECT_DIRECTORY
     - echo "$URLS" > ./input/urls.yaml
-    - ./parcours.sh
+    - ./pagiel.sh
     - cp reports/reports/report.xml $initialPath
   artifacts:
     when: always
@@ -115,9 +115,11 @@ Dans le cas ou le script de génération de rapport est configuré pour renvoyer
     - cd $PROJECT_DIRECTORY
     - echo "$URLS" > ./input/urls.yaml
     - RESULT=0
-    - ./parcours-no-powerapi.sh || RESULT=$?
+    - ./pagiel.sh || RESULT=$?
     - mv reports/reports/report.xml $initialPath
     - exit $RESULT
   ...
 ```
 </Code>
+
+Toutes les options restent accessible avec l'utilisation via runner.
